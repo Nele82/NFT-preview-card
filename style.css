@@ -6,7 +6,81 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
-/* COLORS, FONTS AND A BOX SHADOW */
+/* LAYOUT, SIZE, MARGINS & PADDING */
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD (L, S, M & P) */
+
+#card {
+    height: 80%;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 6% 6% 2% 6%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+main img {
+    width: 100%;
+}
+
+#eth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 7%;
+}
+
+#left {
+    grid-column: 1/2;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+#right {
+    grid-column: 2/3;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#left svg {
+    margin-right: 5%;
+}
+
+#right svg {
+    margin-right: 5%;
+}
+
+/* ATTRIBUTION (L, S, M & P) */
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 16px;
+
+    margin: 0 auto;
+}
+
+/* COLORS, FONTS, BORDERS AND A BOX SHADOW */
 
 body {
     background-color: hsl(217, 54%, 17%);
@@ -17,16 +91,26 @@ body {
 #card {
     background-color: hsl(216, 50%, 16%);
     box-shadow: 1px -1px 5px 18px hsl(218, 56%, 14%);
+
+    border-radius: 10px;
+}
+
+main img {
+    border-radius: 7px;
 }
 
 h2, footer p {
     color: hsl(0, 0%, 100%);
 }
 
-p, #jules {
+p, #cre {
     color: hsl(215, 51%, 70%);
 
     font-size: 18px;
+}
+
+#jules {
+    color: hsl(0, 0%, 100%);
 }
 
 article {
@@ -58,4 +142,43 @@ article {
 
 @media only screen and (max-width: 375px) {
     /* For mobile phones: */
+    #card {
+        height: 65%;
+        width: 85%;
+    }
+
+    h2 {
+        margin-top: 8%;
+
+        font-size: 22px;
+    }
+
+    article p {
+        margin: 6% 0 6% 0;
+
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        height: 100%;
+    }
+
+    #cre, #jules {
+        font-size: 16px;
+    }
+
+    footer img {
+        width: 12%;
+
+        border: 1px solid white;
+        border-radius: 50%;
+
+        margin-right: 6%;
+    }
   }
