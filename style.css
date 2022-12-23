@@ -19,13 +19,13 @@ body {
 /* CARD (L, S, M & P) */
 
 #card {
-    height: 80%;
-    width: 25%;
+    height: 75%;
+    width: 22.5%;
 
     display: flex;
     flex-direction: column;
 
-    padding: 6% 6% 2% 6%;
+    padding: 1.5% 1.5% 1.5% 1.5%;
 }
 
 main {
@@ -37,6 +37,16 @@ main {
 
 main img {
     width: 100%;
+}
+
+h2 {
+    margin-top: 6%;
+}
+
+article p {
+    margin: 6% 0 6% 0;
+
+    line-height: 1.8;
 }
 
 #eth {
@@ -68,6 +78,31 @@ main img {
     margin-right: 5%;
 }
 
+/* FOOTER (L, S, M & P) */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 100%;
+
+    margin-top: 4%;
+}
+
+footer img {
+    width: 12%;
+
+    border: 1px solid white;
+    border-radius: 50%;
+
+    margin-right: 5%;
+}
+
+#cre {
+    margin-right: 1%;
+}
+
 /* ATTRIBUTION (L, S, M & P) */
 
 .attribution {
@@ -92,11 +127,17 @@ body {
     background-color: hsl(216, 50%, 16%);
     box-shadow: 1px -1px 5px 18px hsl(218, 56%, 14%);
 
+    border-radius: 15px;
+}
+
+/* MAIN (C, F, B) */
+
+main img {
     border-radius: 10px;
 }
 
-main img {
-    border-radius: 7px;
+h2{
+    font-size: 28px;
 }
 
 h2, footer p {
@@ -106,19 +147,19 @@ h2, footer p {
 p, #cre {
     color: hsl(215, 51%, 70%);
 
-    font-size: 18px;
-}
-
-#jules {
-    color: hsl(0, 0%, 100%);
+    font-size: 19.5px;
 }
 
 article {
     border-bottom: 1px solid hsl(214, 46%, 27%);
 }
 
+article p {
+    font-size: 19.5px;
+}
+
 #eth {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #left {
@@ -130,6 +171,16 @@ article {
 #right {
     color: hsl(215, 51%, 70%);
 }
+
+/* FOOTER (C, F, B) */
+
+#jules {
+    color: hsl(0, 0%, 100%);
+
+    font-size: 18px;
+}
+
+/* ATTRIBUTION (C, F, B) */
 
 .attribution {
     position: absolute;
@@ -145,6 +196,8 @@ article {
     #card {
         height: 65%;
         width: 85%;
+
+        padding: 6% 6% 3% 6%;
     }
 
     h2 {
@@ -182,3 +235,5 @@ article {
         margin-right: 6%;
     }
   }
+
+
