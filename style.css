@@ -6,26 +6,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
-/* LAYOUT, SIZE, MARGINS & PADDING */
+/* BODY LAYOUT & SIZE */
 
 body {
     height: 100vh;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* CARD (L, S, M & P) */
+/* OVER 375PX (OPTIMIZED FOR THE WIDTH OF 1440PX */
 
 #card {
-    height: 75%;
+    height: 65%;
     width: 22.5%;
 
-    display: flex;
-    flex-direction: column;
-
-    padding: 1.5% 1.5% 1.5% 1.5%;
+    padding: 1.5% 1.5% 0% 1.5%;
 }
 
 main {
@@ -40,7 +38,7 @@ main img {
 }
 
 h2 {
-    margin-top: 6%;
+    margin-top: 8%;
 }
 
 article p {
@@ -61,6 +59,7 @@ article p {
 
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 #right {
@@ -68,6 +67,7 @@ article p {
 
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 #left svg {
@@ -78,16 +78,12 @@ article p {
     margin-right: 5%;
 }
 
-/* FOOTER (L, S, M & P) */
-
 footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
-    height: 100%;
-
-    margin-top: 4%;
+    margin-top: 6%;
 }
 
 footer img {
@@ -100,20 +96,38 @@ footer img {
 }
 
 #cre {
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
-/* ATTRIBUTION (L, S, M & P) */
-
 .attribution {
+    position: absolute;
+    bottom: 20px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    font-size: 16px;
-
-    margin: 0 auto;
 }
+
+h2 {
+    font-size: 1.6vw;
+}
+
+article p {
+    font-size: 1.1vw;
+}   
+
+#eth {
+    font-size: 1.1vw;
+}
+
+footer {
+    font-size: 1.1vw;
+}
+
+.attribution {
+    font-size: 1.1vw;
+}
+
 
 /* COLORS, FONTS, BORDERS AND A BOX SHADOW */
 
@@ -130,14 +144,8 @@ body {
     border-radius: 15px;
 }
 
-/* MAIN (C, F, B) */
-
 main img {
     border-radius: 10px;
-}
-
-h2{
-    font-size: 28px;
 }
 
 h2, footer p {
@@ -146,20 +154,10 @@ h2, footer p {
 
 p, #cre {
     color: hsl(215, 51%, 70%);
-
-    font-size: 19.5px;
 }
 
 article {
     border-bottom: 1px solid hsl(214, 46%, 27%);
-}
-
-article p {
-    font-size: 19.5px;
-}
-
-#eth {
-    font-size: 16px;
 }
 
 #left {
@@ -172,24 +170,17 @@ article p {
     color: hsl(215, 51%, 70%);
 }
 
-/* FOOTER (C, F, B) */
-
 #jules {
     color: hsl(0, 0%, 100%);
-
-    font-size: 18px;
 }
 
-/* ATTRIBUTION (C, F, B) */
-
 .attribution {
-    position: absolute;
-    bottom: 20px;
-
     color: hsl(215, 51%, 70%);
 }
 
+/* >>>>> <<<<< */
 /* MEDIA QUERY */
+/* >>>>> <<<<< */
 
 @media only screen and (max-width: 375px) {
     /* For mobile phones: */
@@ -197,43 +188,112 @@ article p {
         height: 65%;
         width: 85%;
 
-        padding: 6% 6% 3% 6%;
+        padding: 6% 6% 0% 6%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+    }
+    
+    main img {
+        width: 100%;
     }
 
     h2 {
         margin-top: 8%;
-
-        font-size: 22px;
     }
 
     article p {
         margin: 6% 0 6% 0;
 
-        font-size: 16px;
-
         line-height: 1.8;
+    }
+
+    #eth {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        margin-bottom: 7%;
+    }
+    
+    #left {
+        grid-column: 1/2;
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #right {
+        grid-column: 2/3;
+    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    #left svg {
+        margin-right: 5%;
+    }
+    
+    #right svg {
+        margin-right: 5%;
     }
 
     footer {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-
-        height: 100%;
+    
+        margin-top: 6%;
     }
-
-    #cre, #jules {
-        font-size: 16px;
-    }
-
+    
     footer img {
         width: 12%;
-
+    
         border: 1px solid white;
         border-radius: 50%;
+    
+        margin-right: 5%;
+    }
+    
+    #cre {
+        margin-right: 2%;
+    }
 
-        margin-right: 6%;
+    .attribution {
+        position: absolute;
+        bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* FONT SIZES */
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    article p {
+        font-size: 4vw;
+    }   
+
+    #eth {
+        font-size: 4vw;
+    }
+
+    footer {
+        font-size: 4vw;
+    }
+
+    .attribution {
+        font-size: 4vw;
     }
   }
 
+  
 
