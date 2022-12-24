@@ -6,7 +6,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -16,8 +16,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -25,19 +23,15 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- See hover states for interactive elements: the "Equilibrium" photo, the article section heading and the name of the author (in the footer).
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshots/active_states_step1.jpg)
+![](./screenshots/active_states_step2.jpg)
+![](./screenshots/active_states_step3.jpg)
+![](./screenshots/width_1440px.jpg)
+![](./screenshots/width_375px.jpg)
 
 ### Links
 
